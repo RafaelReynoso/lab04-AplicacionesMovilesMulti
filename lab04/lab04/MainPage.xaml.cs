@@ -37,7 +37,7 @@ namespace lab04
 
             Item6.Clicked += async (sender, e) =>
             {
-                var answer = await DisplayAlert("Question?", "Would you like to play a game", "Yes", "No");
+                var answer = await DisplayAlert("Question?", "Would you like to play a game", "Yes", "NoO");
                 Debug.WriteLine("Answer: " + answer);
             };
 
