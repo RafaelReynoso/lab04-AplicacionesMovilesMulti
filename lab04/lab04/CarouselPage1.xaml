@@ -2,14 +2,21 @@
 <CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="lab04.CarouselPage1">
-    <ContentPage.Content>
+    <ContentPage>
         <ContentPage.Padding>
-            
+            <OnPlatform x:TypeArguments="Thickness">
+                <On Platform="iOS, Andorid" Value="0,40,0,0">
+                </On>
+            </OnPlatform>
         </ContentPage.Padding>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Red" FontSize="Medium" HorizontalOptions="Center"></Label>
+            <BoxView Color="Red" WidthRequest="200" HeightRequest="200"
+                     HorizontalOptions="Center" VerticalOptions="CenterAndExpand"></BoxView>
         </StackLayout>
-    </ContentPage.Content>
+    </ContentPage>
+    <ContentPage>
+        <StackLayout>
+        </StackLayout>
+    </ContentPage>
 </CarouselPage>
