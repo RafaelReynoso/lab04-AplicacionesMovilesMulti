@@ -17,6 +17,17 @@
     </ContentPage>
     <ContentPage>
         <StackLayout>
+            <Label Text="gree" FontSize="Medium" HorizontalOptions="Center"></Label>
+            <BoxView Color="Green" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"></BoxView>
         </StackLayout>
+    </ContentPage>
+    <ContentPage>
+        <StackLayout>
+            <Label Text="blue" FontSize="Medium" HorizontalOptions="Center"></Label>
+            <BoxView Color="Blue" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"></BoxView>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage>
+        <Button Text="Close" x:Name="btnClose"></Button>
     </ContentPage>
 </CarouselPage>
